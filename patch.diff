@@ -1,0 +1,40 @@
+From 4d1222a8e976a4879ab1c08c8d1e2ee4557a7953 Mon Sep 17 00:00:00 2001
+From: Claude <claude.baek@sk.com>
+Date: Tue, 7 Jan 2020 22:02:19 +0900
+Subject: [PATCH] =?UTF-8?q?[=EB=B0=B1=EB=91=90=EC=82=B0/=EB=AE=A4=EC=A7=81?=
+ =?UTF-8?q?=EC=82=AC=EC=97=85=EA=B7=B8=EB=A3=B9]=20recommit?=
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+
+---
+ TestApp/ViewController.swift | 6 +-----
+ 1 file changed, 1 insertion(+), 5 deletions(-)
+
+diff --git a/TestApp/ViewController.swift b/TestApp/ViewController.swift
+index be4f48f..7433636 100644
+--- a/TestApp/ViewController.swift
++++ b/TestApp/ViewController.swift
+@@ -22,7 +22,7 @@ class ViewController: UIViewController {
+         super.viewDidLoad()
+ 
+         button1.rx.tap
+-            .throttle(2.0, scheduler: MainScheduler.instance)
++            .throttle(RxTimeInterval.seconds(2), scheduler: MainScheduler.instance)
+             .subscribe(onNext: { (_) in
+                 print("throttle tap")
+             })
+@@ -42,10 +42,6 @@ class ViewController: UIViewController {
+                 print(test)
+             })
+             .disposed(by: bag)
+-        
+-        
+-
+     }
+-    
+ }
+ 
+-- 
+2.20.1
+

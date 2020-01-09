@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:Realm.playground">
+   </FileRef>
+   <FileRef
+      location = "group:Operation.playground">
+   </FileRef>
+   <FileRef
+      location = "group:MyView.playground">
+   </FileRef>
+   <FileRef
+      location = "group:Design-Patterns.playground">
+   </FileRef>
+   <FileRef
+      location = "group:TestApp.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Pods/Pods.xcodeproj">
+   </FileRef>
+</Workspace>
