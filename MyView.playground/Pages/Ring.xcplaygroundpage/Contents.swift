@@ -14,10 +14,8 @@ class MyViewController : UIViewController {
         let view = UIView()
         view.backgroundColor = .white
         
-//        progressRing.backgroundColor = .white
         progressRing.outerRingColor = .red
         progressRing.innerRingColor = .red
-//        progressRing.outerRingWidth = 8
         progressRing.innerRingWidth = 10
         progressRing.style = .dashed(pattern: [3])
         
