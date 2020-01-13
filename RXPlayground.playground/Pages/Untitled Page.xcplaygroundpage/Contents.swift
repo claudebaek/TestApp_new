@@ -12,11 +12,11 @@ let numObs1 = Observable.from(nums1)
 let subject = PublishSubject<Int>.init()
 
 
-//let t = Observable.generate(initialState: 1, condition: { $0 < 10 }, iterate: { $0 + 1})
-//
-//t.subscribe(onNext: {
-//    print($0)
-//})
+let t = Observable.generate(initialState: 1, condition: { $0 < 10 }, iterate: { $0 + 1})
+
+t.subscribe(onNext: {
+    print($0)
+})
 
 let flat = numObs.flatMap { (a) -> Observable<String> in
     Observable.just("\(a)")
@@ -78,4 +78,27 @@ text.onNext("test1")
 page.onNext(1)
 page.onNext(2)
 
+
+
+struct Student {
+    
+  var score: BehaviorSubject<Int>
+}
+
+
+//let disposeBag = DisposeBag()
+
+let ryan = Student(score: BehaviorSubject(value: 80))
+let charlotte = Student(score: BehaviorSubject(value: 90))
+
+let student = PublishSubject<Student>()
+
+student
+    .flatMap {
+        $0.score
+}
+.subscribe(onNext: {
+    print($0)
+})
+//    .disposed(by: disposeBag)
 
