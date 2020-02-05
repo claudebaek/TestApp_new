@@ -42,6 +42,7 @@ final class ViewController: UIViewController {
                 ryan.score.onNext(85)
                 ryan.score.onNext(95)
                 charlotte.score.onNext(100)
+                charlotte.score.onNext(110)
             })
             .disposed(by: bag)
         
