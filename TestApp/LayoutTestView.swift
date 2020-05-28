@@ -17,6 +17,8 @@ class LayoutTestView: UIView {
         // Drawing code
     }
      
+     
+     
      layoutSubviews call:
      
      1, Frame change will call
@@ -29,11 +31,15 @@ class LayoutTestView: UIView {
 
      5, View changes in size, supreview will call
     */
+    
+    var count: CGFloat = 0
+    
     override func layoutSubviews() {
         super.layoutSubviews()
         print(#function)
         
-        frame.size.width = 300
+        count += 1
+        frame.size.width = count
     }
 
 }
