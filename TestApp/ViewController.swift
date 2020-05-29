@@ -14,7 +14,7 @@ final class ViewController: UIViewController {
     @IBOutlet weak var button1: UIButton!
     @IBOutlet weak var button2: UIButton!
     
-
+    weak var weakView: UIView?
     
     private let bag = DisposeBag()
     
@@ -49,7 +49,7 @@ final class ViewController: UIViewController {
         NotificationCenter.default.rx.notification(UIDevice.orientationDidChangeNotification)
             .map { _ in UIDevice.current.orientation.isLandscape }
             .subscribe(onNext: { (test) in
-//                print(test)
+                print(test)
             })
             .disposed(by: bag)
         
@@ -63,6 +63,22 @@ final class ViewController: UIViewController {
             .disposed(by: bag)
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        let view = UIView()
+        weakView = view
+        print(weakView!)
+        
+        self.view.addSubview(weakView!)
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        // addSubview 로 레퍼런스 카운트가 증가하여 인스턴스를 유지한다.
+        print(weakView!)
+
+    }
    
 }
 

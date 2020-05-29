@@ -22,19 +22,19 @@ let flat = numObs.flatMap { (a) -> Observable<String> in
     Observable.just("\(a)")
 }
 
-//let flatDriver = numObs.flatMap { (a) -> Driver<String> in
-//    Driver.just("\(a)")
-//}.asObservable().asDriver(onErrorJustReturn: "")
+let flatDriver = numObs.flatMap { (a) -> Driver<String> in
+    Driver.just("\(a)")
+}.asObservable().asDriver(onErrorJustReturn: "")
 
-//flat.subscribe { (str) in
-//    print("flat: \(str)")
-//}
+flat.subscribe { (str) in
+    print("flat: \(str)")
+}
 
-//flatDriver.drive(onNext: { (str) in
-//    print("onNext: \(str)")
-//
-//}, onCompleted: {
-//}, onDisposed: nil)
+flatDriver.drive(onNext: { (str) in
+    print("onNext: \(str)")
+
+}, onCompleted: {
+}, onDisposed: nil)
 
 
 
