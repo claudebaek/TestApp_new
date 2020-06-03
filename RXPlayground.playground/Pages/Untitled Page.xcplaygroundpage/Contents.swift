@@ -31,9 +31,11 @@ flat.subscribe { (str) in
 }
 
 flatDriver.drive(onNext: { (str) in
-    print("onNext: \(str)")
+    print("flatDriver: \(str)")
 
 }, onCompleted: {
+    print("flatDriver onCompleted")
+
 }, onDisposed: nil)
 
 
@@ -46,7 +48,6 @@ let ob = Observable<Int>.create { (ob) -> Disposable in
     return Disposables.create()
     }
     .share()
-//    .asDriver(onErrorJustReturn: 0)
 
 
 let text = PublishSubject<String>.init()
@@ -55,7 +56,7 @@ let page = PublishSubject<Int>.init()
 let combine = Observable.zip(page, text)
 
 combine.subscribe(onNext: { (page,text) in
-//    print(page,text)
+    print(page,text)
 }, onError: nil, onCompleted: nil, onDisposed: nil)
 
 
@@ -81,12 +82,8 @@ page.onNext(2)
 
 
 struct Student {
-    
   var score: BehaviorSubject<Int>
 }
-
-
-//let disposeBag = DisposeBag()
 
 let ryan = Student(score: BehaviorSubject(value: 80))
 let charlotte = Student(score: BehaviorSubject(value: 90))
@@ -98,7 +95,7 @@ student
         $0.score
 }
 .subscribe(onNext: {
-    print($0)
+    print("student: \($0)")
 })
-//    .disposed(by: disposeBag)
 
+ryan.score.onNext(100)
