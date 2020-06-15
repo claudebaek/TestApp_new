@@ -14,7 +14,7 @@ final class ViewController: UIViewController {
     @IBOutlet weak var button1: UIButton!
     @IBOutlet weak var button2: UIButton!
     
-    weak var weakView: UIView?
+    weak var weakView: TestView?
     
     private let bag = DisposeBag()
     
@@ -66,18 +66,22 @@ final class ViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
-        let view = UIView()
+        let view = TestView(frame: CGRect(x: 0, y: 100, width: 100, height: 100))
+        view.backgroundColor = .yellow
         weakView = view
         print(weakView!)
         
         self.view.addSubview(weakView!)
+        
+//        weakView?.removeFromSuperview()
     }
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         // addSubview 로 레퍼런스 카운트가 증가하여 인스턴스를 유지한다.
-        print(weakView!)
-
+        print(weakView)
+        weakView?.removeFromSuperview()
+        print(weakView)
     }
    
 }
@@ -85,4 +89,22 @@ final class ViewController: UIViewController {
 struct Student {
     
     var score: BehaviorSubject<Int>
+}
+
+class TestView: UIView {
+    
+    let subView = UIView(frame: CGRect(x: 0, y: 0, width: 10, height: 10))
+    
+    override func awakeFromNib() {
+        super.awakeFromNib()
+    }
+    
+    override func draw(_ rect: CGRect) {
+        super.draw(rect)
+        self.addSubview(subView)
+
+    }
+    deinit {
+        print(#function)
+    }
 }
