@@ -81,7 +81,6 @@ final class ViewController: UIViewController {
         // addSubview 로 레퍼런스 카운트가 증가하여 인스턴스를 유지한다.
         print(weakView)
         weakView?.removeFromSuperview()
-        print(weakView)
     }
    
 }
