@@ -39,6 +39,22 @@
                                                 <rect key="frame" x="163" y="175" width="46" height="30"/>
                                                 <state key="normal" title="Button"/>
                                             </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ao1-0u-tdj">
+                                                <rect key="frame" x="73" y="276" width="46" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="Button"/>
+                                                <connections>
+                                                    <action selector="btn1Tap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BLy-tB-opz"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pvu-Wv-umN">
+                                                <rect key="frame" x="253" y="276" width="46" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="Button"/>
+                                                <connections>
+                                                    <action selector="btn2Tap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eUF-sv-kKi"/>
+                                                </connections>
+                                            </button>
                                         </subviews>
                                         <color key="backgroundColor" red="1" green="0.42619264130000001" blue="0.46476447580000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>

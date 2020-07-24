@@ -85,9 +85,27 @@ final class ViewController: UIViewController {
         weakView?.removeFromSuperview()
         print(weakView)
         
-
-        
+        FloOperationQueue.serialQueue.maxConcurrentOperationCount = 1
     }
+    
+    @IBAction func btn1Tap(_ sender: Any) {
+//        OperationQueue.main.addOperation(top)
+        
+        for _ in 0...1000 {
+            let top = ToastOperation()
+            
+            FloOperationQueue.serialQueue.addOperation(top)
+        }
+    }
+    
+    @IBAction func btn2Tap(_ sender: Any) {
+        FloOperationQueue.serialQueue.cancelAllOperations()
+
+        let aop = AlertOperation()
+//        OperationQueue.main.addOperation(aop)
+        FloOperationQueue.serialQueue.addOperation(aop)
+    }
+    
    
 }
 
@@ -112,4 +130,39 @@ class TestView: UIView {
     deinit {
         print(#function)
     }
+}
+
+
+
+enum FloOperationQueue {
+    
+    static let serialQueue = OperationQueue()
+}
+
+class AlertOperation: Operation {
+    
+    override func main() {
+        super.main()
+        print("AlertOperation")
+    }
+}
+
+class ToastOperation: Operation {
+    
+    override func main() {
+        super.main()
+        sleep(1)
+        print("ToastOperation")
+    }
+    
+    override func start() {
+        super.start()
+        print("start")
+    }
+    
+    override func cancel() {
+        super.cancel()
+        print("cancel")
+    }
+    
 }
