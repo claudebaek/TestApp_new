@@ -43,23 +43,25 @@ def deploy(test):
         'pw': 'entks!123'
         }
 
-#    LOGINURL = 'http://appstoreconnect.apple.com/login'
-    LOGINURL = 'http://nid.naver.com/nidlogin.login'
-#    LOGINURL = 'http://naver.com'
+    LOGINURL = 'http://appstoreconnect.apple.com/login'
+#    LOGINURL = 'http://nid.naver.com/nidlogin.login'
+#    LOGINURL = 'http://quotes.toscrape.com/'
 
     BUILDURL = 'https://appstoreconnect.apple.com/apps/1129048043/recent/activity/ios/builds?m='
 #    BUILDURL = 'https://appstoreconnect.apple.com/'
 
-    DOWNLOADURL = 'http://iosapps.itunes.apple.com/itunes-assets/Purple124/v4/0b/2a/bb/0b2abb49-b620-c9e4-0ed5-9c57df2a3759/appDsyms.zip?accessKey=1594826615_3139411280017662167_%2Bw9W%2Fmx7M%2Ba77I41C%2FtuqmqHqsSADOvJjfFJlkK2ngb%2FW6roDklqCEm1h4d9WQJdtaqpqTjJ4EoiB7cQRccbiCQKpWPqDCYPn7ibCvAmjFDaZQBuuFdAG0ttKknBfNM0K9UzQgfze6zW3pC9ZX6MuSWu9uIrSkA6lkq8z3rbN94%3D'
+#    DOWNLOADURL = 'http://iosapps.itunes.apple.com/itunes-assets/Purple124/v4/0b/2a/bb/0b2abb49-b620-c9e4-0ed5-9c57df2a3759/appDsyms.zip?accessKey=1594826615_3139411280017662167_%2Bw9W%2Fmx7M%2Ba77I41C%2FtuqmqHqsSADOvJjfFJlkK2ngb%2FW6roDklqCEm1h4d9WQJdtaqpqTjJ4EoiB7cQRccbiCQKpWPqDCYPn7ibCvAmjFDaZQBuuFdAG0ttKknBfNM0K9UzQgfze6zW3pC9ZX6MuSWu9uIrSkA6lkq8z3rbN94%3D'
     
-    'http://iosapps.itunes.apple.com/itunes-assets/Purple114/v4/39/cb/31/39cb3113-cd3b-5cc1-ff7a-d6d08bad37d9/appDsyms.zip?accessKey=1594897221_8021814428782408016_%2BK4qZbdPVJd27r1mS5tZczW7J%2BbDT%2BM8uisR1tDlHVTkwWMZy7xh77ifqYqs1oE0soRGvV7lbqgrdnhKvbLG%2FIML7NXr68q5S5LYnJV%2FsZ1dVnMinhlw%2FLpvHqnZvU2GC7417tvnRQwq4R89cQFHgm7ez5pLEY20tkjrsvWFtWw%3D'
+    DOWNLOADURL = 'http://iosapps.itunes.apple.com/itunes-assets/Purple114/v4/d7/93/1f/d7931f2c-ff55-0508-06a2-f96b9861d166/appDsyms.zip?accessKey=1595764795_5413953228798838196_fNEI6jPTtmzX7MkZOwDFrf4q2d0IfBBfeBAS03VoRll0Q0tNtFGKv0UMmA%2Fqyjwuw8CvQBh4HhqGJWegF4KvJ926tttSA0dtaDu5NiTBq%2FrxgfGH8PYC9XlacWumLXMb3xfQ%2BeM3ZIdpRmr7BiMXrDV4X3Y2pLdnPxGQtdoeXu0%3D'
 
+#     DOWNLOADURL = 'http://iosapps.itunes.apple.com/itunes-assets/Purple114/v4/39/cb/31/39cb3113-cd3b-5cc1-ff7a-d6d08bad37d9/appDsyms.zip?accessKey=1594897221_8021814428782408016_%2BK4qZbdPVJd27r1mS5tZczW7J%2BbDT%2BM8uisR1tDlHVTkwWMZy7xh77ifqYqs1oE0soRGvV7lbqgrdnhKvbLG%2FIML7NXr68q5S5LYnJV%2FsZ1dVnMinhlw%2FLpvHqnZvU2GC7417tvnRQwq4R89cQFHgm7ez5pLEY20tkjrsvWFtWw%3D'
     
     # Session 생성, with 구문 안에서 유지
     with requests.Session() as s:
         
         #LOGIN GET
         login_get_req = s.get(LOGINURL)
+        bs_content = bs(login_get_req.content, "html.parser")
         print("login_get_req: ",login_get_req.status_code)
 #        csrfmiddlewaretoken = getCsrftoken(login_get_req)
         
@@ -67,13 +69,13 @@ def deploy(test):
 #        LOGIN_INFO = {**LOGIN_INFO}
         login_post_req = s.post(LOGINURL,data=LOGIN_INFO, verify=True)
 #        login_post_req = s.get(LOGINURL)
-        print(login_post_req.content)
+        print(bs_content)
 #        login_post_req = s.post(LOGINURL, auth=('dreamusCompanyIOS@gmail.com','Abwlrapdlxm20190'), verify = False)
 
-        print(login_post_req.status_code)
-        if login_post_req.status_code != 200:
-            raise Exception('로그인이 되지 않았어요! 아이디와 비밀번호를 다시한번 확인해 주세요.')
-        print('로그인성공')
+#        print(login_post_req.status_code)
+#        if login_post_req.status_code != 200:
+#            raise Exception('로그인이 되지 않았어요! 아이디와 비밀번호를 다시한번 확인해 주세요.')
+#        print('로그인성공')
 
         #deploy Get
         deployreq = s.get(LOGINURL)

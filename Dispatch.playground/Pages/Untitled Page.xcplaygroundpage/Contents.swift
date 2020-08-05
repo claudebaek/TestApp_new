@@ -90,3 +90,7 @@ queue.addOperation {
     }
 }
 
+let item = DispatchWorkItem {
+    print("DispatchWorkItem")
+}
+
