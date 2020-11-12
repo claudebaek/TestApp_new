@@ -208,31 +208,31 @@ This practise is particularly useful when the construction of a new object is in
 
 ### Example
 */
-//class ChungasRevengeDisplay {
-//    var name: String?
-//    let font: String
-//
-//    init(font: String) {
-//        self.font = font
-//    }
-//
-//    func clone() -> ChungasRevengeDisplay {
-//        return ChungasRevengeDisplay(font:self.font)
-//    }
-//}
-///*:
-//### Usage
-//*/
-//let Prototype = ChungasRevengeDisplay(font:"GotanProject")
-//
-//let Philippe = Prototype.clone()
-//Philippe.name = "Philippe"
-//
-//let Christoph = Prototype.clone()
-//Christoph.name = "Christoph"
-//
-//let Eduardo = Prototype.clone()
-//Eduardo.name = "Eduardo"
+class ChungasRevengeDisplay {
+    var name: String?
+    let font: String
+
+    init(font: String) {
+        self.font = font
+    }
+
+    func clone() -> ChungasRevengeDisplay {
+        return ChungasRevengeDisplay(font:self.font)
+    }
+}
+/*:
+### Usage
+*/
+let Prototype = ChungasRevengeDisplay(font:"GotanProject")
+
+let Philippe = Prototype.clone()
+Philippe.name = "Philippe"
+
+let Christoph = Prototype.clone()
+Christoph.name = "Christoph"
+
+let Eduardo = Prototype.clone()
+Eduardo.name = "Eduardo"
 /*:
 >**Further Examples:** [Design Patterns in Swift](https://github.com/kingreza/Swift-Prototype)
 */
@@ -246,14 +246,14 @@ There are very few applications, do not overuse this pattern!
 
 ### Example:
 */
-//class DeathStarSuperlaser {
-//    static let sharedInstance = DeathStarSuperlaser()
-//
-//    private init() {
-//        // Private initialization to ensure just one instance is created.
-//    }
-//}
-///*:
-//### Usage:
-//*/
-//let laser = DeathStarSuperlaser.sharedInstance
+class DeathStarSuperlaser {
+    static let sharedInstance = DeathStarSuperlaser()
+
+    private init() {
+        // Private initialization to ensure just one instance is created.
+    }
+}
+/*:
+### Usage:
+*/
+let laser = DeathStarSuperlaser.sharedInstance

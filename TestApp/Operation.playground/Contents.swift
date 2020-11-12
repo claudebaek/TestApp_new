@@ -43,12 +43,7 @@ op2.completionBlock = {
     print("op2 finished")
 }
 
-
-//op1.addDependency(op2)
-//op2.addDependency(op1)
-
 opq.addOperation(op2)
-//op2.cancel()
 
 opq.cancelAllOperations()
 
@@ -57,5 +52,4 @@ opq.addOperation(op1)
 opq.addOperation {
     print("done")
 }
-//opq.waitUntilAllOperationsAreFinished()
 

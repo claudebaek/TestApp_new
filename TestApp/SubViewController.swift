@@ -18,13 +18,11 @@ class SubViewController: UIViewController {
         super.viewDidLoad()
         
         tapButton.setImage(UIImage(named: "btnMainplayerNext"), for: .normal)
-//        tapButton.setBackgroundImage(UIImage(named: "btnMainplayerNext"), for: .normal)
+
 
         tapButton.setImage(UIImage(named: "btnMainplayerPlay"), for: .focused)
         tapButton.setImage(UIImage(named: "btnMainplayerPrevious"), for: .selected)
         tapButton.setImage(UIImage(named: "btnMainSetting"), for: .application)
-//        tapButton.setImage(UIImage(named: "btnMainFavorite"), for: .highlighted)
-//        tapButton.adjustsImageWhenHighlighted = false
     }
 
     @IBAction func tap(_ sender: Any) {
@@ -32,7 +30,6 @@ class SubViewController: UIViewController {
     }
     
     @IBAction func changeButton(_ sender: Any) {
-//        tapButton.isSelected = !tapButton.isSelected
         tapButton.setImage(UIImage(named: "btnMainplayerPrevious"), for: .normal)
     }
     

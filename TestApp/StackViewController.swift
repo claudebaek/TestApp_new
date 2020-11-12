@@ -21,8 +21,8 @@ class StackViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-//        stackView.insertSubview(purpleView, at: 2)
-//        stackView.removeArrangedSubview(blueView)
+        stackView.insertSubview(purpleView, at: 2)
+        stackView.removeArrangedSubview(blueView)
         stackView.insertArrangedSubview(yellowView, at: 3)
     }
 

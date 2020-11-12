@@ -1,29 +1,29 @@
 import UIKit
 
-//private let concurrentQueue =
-//    DispatchQueue(
-//        label: "com.raywenderlich.GooglyPuff.photoQueue",
-//        attributes: .concurrent)
-//
-//print("start")
-//
-//concurrentQueue.sync {
-//    print(Thread.current)
-//    for i in 0...100 {
-//        print(i)
-//    }
-//}
-//
-//concurrentQueue.async {
-//    print(Thread.current)
-//    for i in 100...200 {
-//        print(i)
-//    }
-//}
-//
-//print("end")
-//
-//
+private let concurrentQueue =
+    DispatchQueue(
+        label: "com.raywenderlich.GooglyPuff.photoQueue",
+        attributes: .concurrent)
+
+print("start")
+
+concurrentQueue.sync {
+    print(Thread.current)
+    for i in 0...100 {
+        print(i)
+    }
+}
+
+concurrentQueue.async {
+    print(Thread.current)
+    for i in 100...200 {
+        print(i)
+    }
+}
+
+print("end")
+
+
 public func queueName() -> String {
     if let currentOperationQueue = OperationQueue.current {
         if let currentDispatchQueue = currentOperationQueue.underlyingQueue {
@@ -43,27 +43,27 @@ public func queueName() -> String {
 private let globalA = DispatchQueue(label: "A",attributes: .concurrent)
 //
 //
-//private let globalB = DispatchQueue(label: "A",attributes: .concurrent)
-//
-//globalA.async {
-//    print("globalA")
-//    DispatchQueue.main.sync {
-//        print(Thread.current)
-//        print(queueName())
-//
-//        for i in 200...300 {
-//            print(i)
-//        }
-//    }
-//
-//    globalB.sync {
-//        print(Thread.current)
-//        print(queueName())
-//        for i in 300...400 {
-//            print(i)
-//        }
-//    }
-//}
+private let globalB = DispatchQueue(label: "A",attributes: .concurrent)
+
+globalA.async {
+    print("globalA")
+    DispatchQueue.main.sync {
+        print(Thread.current)
+        print(queueName())
+
+        for i in 200...300 {
+            print(i)
+        }
+    }
+
+    globalB.sync {
+        print(Thread.current)
+        print(queueName())
+        for i in 300...400 {
+            print(i)
+        }
+    }
+}
 
 
 

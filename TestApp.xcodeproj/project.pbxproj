@@ -59,19 +59,21 @@
 		1179E64821C8F936000DB345 /* TestAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1179E64C21C8F936000DB345 /* TestAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestAppUITests.swift; sourceTree = "<group>"; };
 		1179E64E21C8F936000DB345 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		11A088FD2248BBED0018EDF3 /* CryptoPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = CryptoPlayground.playground; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
-		11A088FE2248BBEE0018EDF3 /* Semaphore.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Semaphore.playground; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
-		11A089002248BBEE0018EDF3 /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
-		11A089012248BBEE0018EDF3 /* Dispatch.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Dispatch.playground; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
-		11A089022248BBEE0018EDF3 /* Algorithm.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Algorithm.playground; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
-		11A089032248BBEE0018EDF3 /* RXPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = RXPlayground.playground; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		11D7CE57225350AE00C7B77E /* View.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = View.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
-		11E496C92249A72E008534BB /* Closure.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Closure.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		2F5AF976E4F4BDBCBA439C82 /* libPods-TestApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TestApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		44011AAB238F8BB9001F93DA /* StackViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackViewController.swift; sourceTree = "<group>"; };
 		44253F5E2395FB1A00F9CE6C /* SubViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubViewController.swift; sourceTree = "<group>"; };
+		442C11A1255CF71600CFD335 /* Design-Patterns.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; name = "Design-Patterns.playground"; path = "/Users/dhn0027/TestApp/TestApp/Design-Patterns.playground"; sourceTree = "<absolute>"; };
+		442C11A2255CF71600CFD335 /* Realm.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; name = Realm.playground; path = /Users/dhn0027/TestApp/TestApp/Realm.playground; sourceTree = "<absolute>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		442C11A3255CF71600CFD335 /* Operation.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; name = Operation.playground; path = /Users/dhn0027/TestApp/TestApp/Operation.playground; sourceTree = "<absolute>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		442C11AA255CF73400CFD335 /* Operation.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; name = Operation.playground; path = /Users/dhn0027/TestApp/TestApp/Operation.playground; sourceTree = "<absolute>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		442C11AB255CF73B00CFD335 /* Realm.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; name = Realm.playground; path = /Users/dhn0027/TestApp/TestApp/Realm.playground; sourceTree = "<absolute>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		4440F94D23EA5B7F0061790F /* LayoutSubVIewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutSubVIewController.swift; sourceTree = "<group>"; };
 		4440F94F23EA5C140061790F /* LayoutTestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutTestView.swift; sourceTree = "<group>"; };
+		4454A05F255CF78100DEBBE0 /* Dispatch.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Dispatch.playground; sourceTree = "<group>"; };
+		4454A066255CF78C00DEBBE0 /* RXPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = RXPlayground.playground; sourceTree = "<group>"; };
+		4454A06A255CF79600DEBBE0 /* Semaphore.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Semaphore.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		4454A06E255CF7A100DEBBE0 /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; };
 		50DC75E546F7ADC4C5DB1C31 /* libPods-TestAppTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TestAppTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		693DA06785FC7BDB1B60A886 /* Pods-TestApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TestApp/Pods-TestApp.debug.xcconfig"; sourceTree = "<group>"; };
 		82887AA94857F5B533E3FE9F /* libPods-TestAppUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TestAppUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -113,7 +115,6 @@
 		1179E62021C8F934000DB345 = {
 			isa = PBXGroup;
 			children = (
-				11E496C92249A72E008534BB /* Closure.playground */,
 				1179E62B21C8F934000DB345 /* TestApp */,
 				1179E64021C8F936000DB345 /* TestAppTests */,
 				1179E64B21C8F936000DB345 /* TestAppUITests */,
@@ -136,14 +137,17 @@
 		1179E62B21C8F934000DB345 /* TestApp */ = {
 			isa = PBXGroup;
 			children = (
-				11A089002248BBEE0018EDF3 /* MyPlayground.playground */,
+				442C11AB255CF73B00CFD335 /* Realm.playground */,
+				442C11AA255CF73400CFD335 /* Operation.playground */,
+				442C11A1255CF71600CFD335 /* Design-Patterns.playground */,
+				442C11A2255CF71600CFD335 /* Realm.playground */,
+				442C11A3255CF71600CFD335 /* Operation.playground */,
+				4454A06E255CF7A100DEBBE0 /* MyPlayground.playground */,
 				11D7CE57225350AE00C7B77E /* View.playground */,
 				113503B0224B72A300584302 /* DesignPatternPractice.playground */,
-				11A089022248BBEE0018EDF3 /* Algorithm.playground */,
-				11A088FD2248BBED0018EDF3 /* CryptoPlayground.playground */,
-				11A089012248BBEE0018EDF3 /* Dispatch.playground */,
-				11A089032248BBEE0018EDF3 /* RXPlayground.playground */,
-				11A088FE2248BBEE0018EDF3 /* Semaphore.playground */,
+				4454A05F255CF78100DEBBE0 /* Dispatch.playground */,
+				4454A06A255CF79600DEBBE0 /* Semaphore.playground */,
+				4454A066255CF78C00DEBBE0 /* RXPlayground.playground */,
 				1179E62C21C8F934000DB345 /* AppDelegate.swift */,
 				1179E62E21C8F934000DB345 /* ViewController.swift */,
 				1146AE8922EEBCE2006A1F10 /* ScrollViewController.swift */,
