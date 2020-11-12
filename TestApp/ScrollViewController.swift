@@ -12,12 +12,26 @@ class ScrollViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
 
+    var testNumber = 0
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         tableView.contentInset.right = 100
         tableView.contentInset.left = 200
         tableView.contentInset.bottom = 200
+        
+        DispatchQueue.global().async { [unowned self] in 
+            for _ in 0...10000000 {
+                self.testNumber += 1
+                print(self.testNumber)
+            }
+        }
+        
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        dismiss(animated: true, completion: nil)
     }
     
     override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
