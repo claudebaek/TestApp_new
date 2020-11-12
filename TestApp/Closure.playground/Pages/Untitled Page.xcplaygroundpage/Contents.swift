@@ -43,3 +43,35 @@ DispatchQueue.global().async {
 paragraph?.printSome()
 paragraph = nil
 
+
+class Test {
+    
+    var closure: (() -> Void)?
+    
+    func excute() {
+        
+        var count = 0
+        
+        if closure == nil {
+            closure = {
+                count += 1
+                print(count)
+            }
+        }
+        self.closure!()
+    }
+    
+}
+
+let test = Test()
+
+for _ in 0...5 {
+    
+    test.excute()
+}
+
+let testClosure = {
+    print("test")
+}
+
+

@@ -74,6 +74,7 @@
 		4454A066255CF78C00DEBBE0 /* RXPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = RXPlayground.playground; sourceTree = "<group>"; };
 		4454A06A255CF79600DEBBE0 /* Semaphore.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Semaphore.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		4454A06E255CF7A100DEBBE0 /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; };
+		4454A075255D071D00DEBBE0 /* Closure.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Closure.playground; sourceTree = "<group>"; };
 		50DC75E546F7ADC4C5DB1C31 /* libPods-TestAppTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TestAppTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		693DA06785FC7BDB1B60A886 /* Pods-TestApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TestApp/Pods-TestApp.debug.xcconfig"; sourceTree = "<group>"; };
 		82887AA94857F5B533E3FE9F /* libPods-TestAppUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TestAppUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -137,6 +138,7 @@
 		1179E62B21C8F934000DB345 /* TestApp */ = {
 			isa = PBXGroup;
 			children = (
+				4454A075255D071D00DEBBE0 /* Closure.playground */,
 				442C11AB255CF73B00CFD335 /* Realm.playground */,
 				442C11AA255CF73400CFD335 /* Operation.playground */,
 				442C11A1255CF71600CFD335 /* Design-Patterns.playground */,
