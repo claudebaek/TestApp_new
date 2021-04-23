@@ -258,7 +258,7 @@ enum Eternal {
 
     static func object(forKey key: String) -> AnyObject! {
         let defaults: UserDefaults = UserDefaults.standard
-        return defaults.object(forKey: key) as AnyObject!
+        return defaults.object(forKey: key) as AnyObject?
     }
 
 }

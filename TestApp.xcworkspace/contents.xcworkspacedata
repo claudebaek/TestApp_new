@@ -5,6 +5,9 @@
       location = "group:Realm.playground">
    </FileRef>
    <FileRef
+      location = "group:Closure.playground">
+   </FileRef>
+   <FileRef
       location = "group:Operation.playground">
    </FileRef>
    <FileRef
@@ -12,6 +15,30 @@
    </FileRef>
    <FileRef
       location = "group:Design-Patterns.playground">
+   </FileRef>
+   <FileRef
+      location = "group:Algorithm.playground">
+   </FileRef>
+   <FileRef
+      location = "group:TestApp/../View.playground">
+   </FileRef>
+   <FileRef
+      location = "group:RXPlayground.playground">
+   </FileRef>
+   <FileRef
+      location = "group:Dispatch.playground">
+   </FileRef>
+   <FileRef
+      location = "group:TestApp/../DesignPatternPractice.playground">
+   </FileRef>
+   <FileRef
+      location = "group:Semaphore.playground">
+   </FileRef>
+   <FileRef
+      location = "group:MyPlayground.playground">
+   </FileRef>
+   <FileRef
+      location = "group:CryptoPlayground.playground">
    </FileRef>
    <FileRef
       location = "group:TestApp.xcodeproj">
