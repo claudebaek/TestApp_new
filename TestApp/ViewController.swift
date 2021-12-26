@@ -72,7 +72,6 @@ final class ViewController: UIViewController {
         print(weakView!)
         
         self.view.addSubview(weakView!)
-        
 //        weakView?.removeFromSuperview()
     }
     
