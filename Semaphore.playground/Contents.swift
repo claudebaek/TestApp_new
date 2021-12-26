@@ -54,17 +54,3 @@ DispatchQueue.global().async {
 
 print("finish")
 
-
-//let queue = DispatchQueue(label: "com.gcd.myQueue", attributes: .concurrent)
-//let semaphore1 = DispatchSemaphore(value: 3)
-//for i in 0 ..< 15 {
-//    queue.async {
-//        let songNumber = i + 1
-//        semaphore1.wait()
-//        print("Downloading song", songNumber)
-//        sleep(2) // Download take ~2 sec each
-//        print("Downloaded song", songNumber)
-//        semaphore1.signal()
-//    }
-//}
-
