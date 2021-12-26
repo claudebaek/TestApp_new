@@ -5,9 +5,6 @@
       location = "group:Realm.playground">
    </FileRef>
    <FileRef
-      location = "group:Closure.playground">
-   </FileRef>
-   <FileRef
       location = "group:Operation.playground">
    </FileRef>
    <FileRef
