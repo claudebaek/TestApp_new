@@ -20,10 +20,16 @@
       location = "group:Algorithm.playground">
    </FileRef>
    <FileRef
+      location = "group:TestApp/../View.playground">
+   </FileRef>
+   <FileRef
       location = "group:RXPlayground.playground">
    </FileRef>
    <FileRef
       location = "group:Dispatch.playground">
+   </FileRef>
+   <FileRef
+      location = "group:TestApp/../DesignPatternPractice.playground">
    </FileRef>
    <FileRef
       location = "group:Semaphore.playground">

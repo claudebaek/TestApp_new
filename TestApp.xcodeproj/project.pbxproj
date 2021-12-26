@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -43,7 +43,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		113503B0224B72A300584302 /* DesignPatternPractice.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = DesignPatternPractice.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		1146AE8922EEBCE2006A1F10 /* ScrollViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewController.swift; sourceTree = "<group>"; };
 		115E816E22607AC000DF92ED /* RealmTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmTests.swift; sourceTree = "<group>"; };
 		1179E62921C8F934000DB345 /* TestApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -59,14 +58,6 @@
 		1179E64821C8F936000DB345 /* TestAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1179E64C21C8F936000DB345 /* TestAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestAppUITests.swift; sourceTree = "<group>"; };
 		1179E64E21C8F936000DB345 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		11A088FD2248BBED0018EDF3 /* CryptoPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = CryptoPlayground.playground; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
-		11A088FE2248BBEE0018EDF3 /* Semaphore.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Semaphore.playground; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
-		11A089002248BBEE0018EDF3 /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
-		11A089012248BBEE0018EDF3 /* Dispatch.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Dispatch.playground; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
-		11A089022248BBEE0018EDF3 /* Algorithm.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Algorithm.playground; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
-		11A089032248BBEE0018EDF3 /* RXPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = RXPlayground.playground; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
-		11D7CE57225350AE00C7B77E /* View.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = View.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
-		11E496C92249A72E008534BB /* Closure.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Closure.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		2F5AF976E4F4BDBCBA439C82 /* libPods-TestApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TestApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		44011AAB238F8BB9001F93DA /* StackViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackViewController.swift; sourceTree = "<group>"; };
 		44253F5E2395FB1A00F9CE6C /* SubViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubViewController.swift; sourceTree = "<group>"; };
@@ -113,7 +104,6 @@
 		1179E62021C8F934000DB345 = {
 			isa = PBXGroup;
 			children = (
-				11E496C92249A72E008534BB /* Closure.playground */,
 				1179E62B21C8F934000DB345 /* TestApp */,
 				1179E64021C8F936000DB345 /* TestAppTests */,
 				1179E64B21C8F936000DB345 /* TestAppUITests */,
@@ -136,14 +126,6 @@
 		1179E62B21C8F934000DB345 /* TestApp */ = {
 			isa = PBXGroup;
 			children = (
-				11A089002248BBEE0018EDF3 /* MyPlayground.playground */,
-				11D7CE57225350AE00C7B77E /* View.playground */,
-				113503B0224B72A300584302 /* DesignPatternPractice.playground */,
-				11A089022248BBEE0018EDF3 /* Algorithm.playground */,
-				11A088FD2248BBED0018EDF3 /* CryptoPlayground.playground */,
-				11A089012248BBEE0018EDF3 /* Dispatch.playground */,
-				11A089032248BBEE0018EDF3 /* RXPlayground.playground */,
-				11A088FE2248BBEE0018EDF3 /* Semaphore.playground */,
 				1179E62C21C8F934000DB345 /* AppDelegate.swift */,
 				1179E62E21C8F934000DB345 /* ViewController.swift */,
 				1146AE8922EEBCE2006A1F10 /* ScrollViewController.swift */,
@@ -589,7 +571,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 6RT7Q26MQ3;
+				DEVELOPMENT_TEAM = 96FPVL6LQJ;
 				INFOPLIST_FILE = TestApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -608,7 +590,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 6RT7Q26MQ3;
+				DEVELOPMENT_TEAM = 96FPVL6LQJ;
 				INFOPLIST_FILE = TestApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
