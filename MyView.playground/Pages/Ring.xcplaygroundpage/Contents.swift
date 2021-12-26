@@ -4,8 +4,6 @@ import UIKit
 import PlaygroundSupport
 import UICircularProgressRing
 
-
-
 class MyViewController : UIViewController {
     
     lazy var progressRing = UICircularProgressRing(frame: CGRect.init(x: 0, y: 0, width: 100, height: 100))
