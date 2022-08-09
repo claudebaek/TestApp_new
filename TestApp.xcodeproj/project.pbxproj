@@ -23,6 +23,7 @@
 		4440F94E23EA5B7F0061790F /* LayoutSubVIewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4440F94D23EA5B7F0061790F /* LayoutSubVIewController.swift */; };
 		4440F95023EA5C140061790F /* LayoutTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4440F94F23EA5C140061790F /* LayoutTestView.swift */; };
 		592E1BFFD8E0FA4E713E3EC3 /* libPods-TestApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F5AF976E4F4BDBCBA439C82 /* libPods-TestApp.a */; };
+		8EE90BBB27AF505B00E9A8DD /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE90BBA27AF505B00E9A8DD /* CollectionViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +68,7 @@
 		693DA06785FC7BDB1B60A886 /* Pods-TestApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TestApp/Pods-TestApp.debug.xcconfig"; sourceTree = "<group>"; };
 		82887AA94857F5B533E3FE9F /* libPods-TestAppUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TestAppUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8ECFF0F955E9B6F884F095C3 /* Pods-TestAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestAppTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TestAppTests/Pods-TestAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		8EE90BBA27AF505B00E9A8DD /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
 		B2A97648262826CAF3DD545E /* Pods-TestAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestAppUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TestAppUITests/Pods-TestAppUITests.release.xcconfig"; sourceTree = "<group>"; };
 		D6983E05BF650AE2239571F1 /* Pods-TestAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestAppUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TestAppUITests/Pods-TestAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		F2C27B934023218A1F792679 /* Pods-TestAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestAppTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TestAppTests/Pods-TestAppTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -126,10 +128,11 @@
 		1179E62B21C8F934000DB345 /* TestApp */ = {
 			isa = PBXGroup;
 			children = (
+				1179E63021C8F934000DB345 /* Main.storyboard */,
 				1179E62C21C8F934000DB345 /* AppDelegate.swift */,
 				1179E62E21C8F934000DB345 /* ViewController.swift */,
 				1146AE8922EEBCE2006A1F10 /* ScrollViewController.swift */,
-				1179E63021C8F934000DB345 /* Main.storyboard */,
+				8EE90BBA27AF505B00E9A8DD /* CollectionViewController.swift */,
 				4440F94D23EA5B7F0061790F /* LayoutSubVIewController.swift */,
 				4440F94F23EA5C140061790F /* LayoutTestView.swift */,
 				44011AAB238F8BB9001F93DA /* StackViewController.swift */,
@@ -200,6 +203,8 @@
 			dependencies = (
 			);
 			name = TestApp;
+			packageProductDependencies = (
+			);
 			productName = TestApp;
 			productReference = 1179E62921C8F934000DB345 /* TestApp.app */;
 			productType = "com.apple.product-type.application";
@@ -275,6 +280,8 @@
 				Base,
 			);
 			mainGroup = 1179E62021C8F934000DB345;
+			packageReferences = (
+			);
 			productRefGroup = 1179E62A21C8F934000DB345 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -391,6 +398,7 @@
 				44011AAC238F8BB9001F93DA /* StackViewController.swift in Sources */,
 				44253F5F2395FB1A00F9CE6C /* SubViewController.swift in Sources */,
 				1146AE8A22EEBCE2006A1F10 /* ScrollViewController.swift in Sources */,
+				8EE90BBB27AF505B00E9A8DD /* CollectionViewController.swift in Sources */,
 				4440F95023EA5C140061790F /* LayoutTestView.swift in Sources */,
 				1179E62D21C8F934000DB345 /* AppDelegate.swift in Sources */,
 				4440F94E23EA5B7F0061790F /* LayoutSubVIewController.swift in Sources */,
