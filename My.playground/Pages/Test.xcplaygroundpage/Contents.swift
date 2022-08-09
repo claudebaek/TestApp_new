@@ -56,21 +56,3 @@ let encodedString = "https%3A%2F%2Fwww.test02-myrealtrip.com%2Finstants%2Faccomm
 let aaa = encodedString.removingPercentEncoding
 let fsda = string.removingPercentEncoding ?? ""
 URL(string: aaa ?? "")
-
-extension Int {
-    var DecimalString: String {
-        let number: NSNumber = NSNumber(value: self as Int)
-        let numberString = NumberFormatter.localizedString(from: number, number: .decimal)
-        return numberString
-    }
-}
-
-print(300.DecimalString)
-
-private var impressionItems = [String(): [UUID: String]()]
-private var impressionItems1: [String: [UUID: String]] = [String():[:]]
-let fds = impressionItems1[""]
-
-let arr1 = [1,2,3,3]
-var lakdsfj = Set(arr1)
-lakdsfj.remove(1)
