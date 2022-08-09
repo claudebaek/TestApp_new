@@ -4,7 +4,7 @@
 def shared
   pod 'RxSwift'
   pod 'RxCocoa'
-#  pod 'Realm'
+  pod 'SnapKit'
   pod 'RealmSwift'
   pod 'UICircularProgressRing'
   pod 'Kingfisher'

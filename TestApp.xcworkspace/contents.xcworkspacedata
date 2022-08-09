@@ -5,13 +5,13 @@
       location = "group:Realm.playground">
    </FileRef>
    <FileRef
-      location = "group:Closure.playground">
-   </FileRef>
-   <FileRef
       location = "group:Operation.playground">
    </FileRef>
    <FileRef
       location = "group:MyView.playground">
+   </FileRef>
+   <FileRef
+      location = "group:/Users/doosan.baek/TestApp_new/Thread.playground">
    </FileRef>
    <FileRef
       location = "group:Design-Patterns.playground">
@@ -20,22 +20,13 @@
       location = "group:Algorithm.playground">
    </FileRef>
    <FileRef
-      location = "group:TestApp/../View.playground">
-   </FileRef>
-   <FileRef
       location = "group:RXPlayground.playground">
-   </FileRef>
-   <FileRef
-      location = "group:Dispatch.playground">
-   </FileRef>
-   <FileRef
-      location = "group:TestApp/../DesignPatternPractice.playground">
    </FileRef>
    <FileRef
       location = "group:Semaphore.playground">
    </FileRef>
    <FileRef
-      location = "group:MyPlayground.playground">
+      location = "group:/Users/doosan.baek/TestApp_new/My.playground">
    </FileRef>
    <FileRef
       location = "group:CryptoPlayground.playground">
