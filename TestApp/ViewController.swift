@@ -84,16 +84,6 @@ final class ViewController: UIViewController {
         horiStackView.addArrangedSubview(button2)
         horiStackView.addArrangedSubview(button3)
         
-//        button1.snp.makeConstraints {
-//            $0.width.equalTo(20)
-//        }
-//        button2.snp.makeConstraints {
-//            $0.width.equalTo(20)
-//        }
-//        button3.snp.makeConstraints {
-//            $0.width.equalTo(20)
-//        }
-        
         myTextView.textContainer.maximumNumberOfLines = 3
     }
     
