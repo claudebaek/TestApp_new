@@ -8,7 +8,7 @@
 
 import XCTest
 @testable import TestApp
-
+import RxCocoa
 import RxSwift
 import Photos
 

@@ -11,6 +11,9 @@
       location = "group:MyView.playground">
    </FileRef>
    <FileRef
+      location = "group:/Users/doosan.baek/TestApp_new/Thread.playground">
+   </FileRef>
+   <FileRef
       location = "group:Design-Patterns.playground">
    </FileRef>
    <FileRef
@@ -18,9 +21,6 @@
    </FileRef>
    <FileRef
       location = "group:RXPlayground.playground">
-   </FileRef>
-   <FileRef
-      location = "group:Dispatch.playground">
    </FileRef>
    <FileRef
       location = "group:Semaphore.playground">

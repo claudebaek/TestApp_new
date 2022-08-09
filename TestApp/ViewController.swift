@@ -8,11 +8,14 @@
 
 import RxCocoa
 import RxSwift
+import SnapKit
 
 final class ViewController: UIViewController {
     
     @IBOutlet weak var button1: UIButton!
     @IBOutlet weak var button2: UIButton!
+    @IBOutlet weak var horiStackView: UIStackView!
+    @IBOutlet weak var myTextView: UITextView!
     
     weak var weakView: TestView?
     
@@ -32,6 +35,9 @@ final class ViewController: UIViewController {
                 print("throttle tap")
                 student.onNext(ryan)
                 student.onNext(charlotte)
+                
+                let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "ScrollViewController") as! ScrollViewController
+                self.parent?.present(vc, animated: true)
             })
             .disposed(by: bag)
         
@@ -61,14 +67,44 @@ final class ViewController: UIViewController {
             print($0)
         })
             .disposed(by: bag)
+        
+        let button1 = UIButton()
+        button1.setTitle("test", for: .normal)
+        button1.backgroundColor = .yellow
+        
+        let button2 = UIButton()
+        button2.setTitle("testtest", for: .normal)
+        button2.backgroundColor = .yellow
+
+        let button3 = UIButton()
+        button3.setTitle("testtesttestfdjklsajflksa", for: .normal)
+        button3.backgroundColor = .yellow
+        
+        horiStackView.addArrangedSubview(button1)
+        horiStackView.addArrangedSubview(button2)
+        horiStackView.addArrangedSubview(button3)
+        
+//        button1.snp.makeConstraints {
+//            $0.width.equalTo(20)
+//        }
+//        button2.snp.makeConstraints {
+//            $0.width.equalTo(20)
+//        }
+//        button3.snp.makeConstraints {
+//            $0.width.equalTo(20)
+//        }
+        
+        myTextView.textContainer.maximumNumberOfLines = 3
     }
+    
+    let testView = TestView(frame: CGRect(x: 0, y: 100, width: 100, height: 100))
+
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
-        let view = TestView(frame: CGRect(x: 0, y: 100, width: 100, height: 100))
-        view.backgroundColor = .yellow
-        weakView = view
+        testView.backgroundColor = .yellow
+        weakView = testView
         print(weakView!)
         
         self.view.addSubview(weakView!)
