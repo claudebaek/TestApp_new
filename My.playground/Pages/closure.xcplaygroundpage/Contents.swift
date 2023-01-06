@@ -11,7 +11,7 @@ class Test {
         var count = 0
         
         if closure == nil {
-            closure = { count 
+            closure = { count
                 count += 1
                 print(count)
             }

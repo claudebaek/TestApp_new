@@ -45,6 +45,10 @@ class TestView: UIView {
 //        guard isHidden else { return nil }
         return arc4random()
     }()
+    
+    static func testParam(param: String = "\(#function)") {
+        print(param)
+    }
 }
 
 
@@ -56,3 +60,12 @@ let encodedString = "https%3A%2F%2Fwww.test02-myrealtrip.com%2Finstants%2Faccomm
 let aaa = encodedString.removingPercentEncoding
 let fsda = string.removingPercentEncoding ?? ""
 URL(string: aaa ?? "")
+
+
+
+func test() {
+    print(TestView.testParam())
+
+}
+
+test()
