@@ -11,7 +11,7 @@ class Test {
         var count = 0
         
         if closure == nil {
-            closure = { 
+            closure = { count
                 count += 1
                 print(count)
             }
@@ -32,6 +32,4 @@ let testClosure = {
     print("test")
 }
 
-
-Bool("true")
 

@@ -12,6 +12,7 @@ import SnapKit
 
 final class ViewController: UIViewController {
     
+    @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var button1: UIButton!
     @IBOutlet weak var button2: UIButton!
     @IBOutlet weak var horiStackView: UIStackView!
@@ -23,6 +24,7 @@ final class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        scrollView.keyboardDismissMode = .interactive
         
         let ryan = Student(score: BehaviorSubject(value: 80))
         let charlotte = Student(score: BehaviorSubject(value: 90))
